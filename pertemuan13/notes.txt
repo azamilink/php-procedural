@@ -1,0 +1,15 @@
+Pertemuan-13: File Handling
+
+-awal- Tambah Data
+1. ubah atribut di tag input type="file" dihalaman tambah.php
+2. tambah atribut di tag form enctype="multipart/form-data" dihalaman tambah.php
+3. membuat function uplod() dibawah function tambah() dihalaman functions.php
+4. gunakan fungsi uniqid() didalam function upload() untuk mengubah nama gambar baru
+5. gunakan fungsi move_uploaded_file didalam function upload() untuk memindahkan tempat penyimpanan gambar
+6. kembalikan nama file / nama gambar baru agar bisa dimasukan ke key ['gambar']
+
+-lanjutan- Ubah Data
+1. ubah atribut di tag input type="file" dihalaman ubah.php
+2. tambah atribut di tag form enctype="multipart/form-data" dihalaman ubah.php
+3. tambahkan input type hidden untuk gambar lama dihalaman ubah.php
+4. modifikasi function ubah()

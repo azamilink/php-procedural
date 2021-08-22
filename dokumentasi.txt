@@ -1,0 +1,144 @@
+Pertemuan-9: => Koneksi ke database
+
+-awal- lihat page index2.php untuk function dihalaman yang sama
+1. koneksi ke database "phpdasar" di MySQL
+2. ambil data dari tabel "mahasiswa" / query data mahasiswa
+3. ambil data (fetch) "mahasiswa" dari object result
+	// mysqli_fetch_row() // mengembalikan array numerik [array dengan 	'index' angka 	dari '0']
+	// mysqli_fetch_assoc() // mengembalikan array associative [array dengan 	'key' 	berupa 'nama']
+	// mysqli_fetch_array() // mengembalikan keduanya [array numerik dan 	associative]
+	// mysqli_fetch_object() // mengembalikan object
+4. lakukan pengulangan untuk setiap element pada array mahasiswa
+5. pengulangan untuk no urut tabel
+
+versi 2: lihat page index.php untuk function dihalaman yang berbeda (functions.php)
+1. membuat page function.php
+2. memindahkan koneksi / $conn ke page functions.php
+3. menghubunkan page functions.php ke index.php dengan 'require'
+4. membuat function query() dihalaman functions.php
+5. memanggil function query() dihalaman index.php
+6. lakukan pengulangan / foreach untuk setiap element pada array mahasiswa dan masukan ke $row
+7. tampilkan data yang ada dalam $row berdasarkan 'key' array mahasiswa
+
+
+
+Pertemuan-10: Tambah / hapus Data
+
+-awal-lihat halaman tambah2.php untuk function dalam halaman yang sama
+1. membuat tag <a>Tambah data mahasiswa</a>
+2. membuat halaman tambah.php
+3. membuat query tambah data ke tabel mahasiswa
+
+versi 2: lihat tambah.php untuk function di halaman yang berbeda (functions.php)
+1. membuat function tambah(); di halaman function.php
+2. menjalankan fungsi tambah(); dihalaman tambah.php
+3. membuat alert "data berhasil ditambahkan"
+4. menambahkan atribut 'required' dihalaman tambah.php agar input wajib di isi
+5. menambahkan function 'htmlspecialchars' dihalaman functions.php untuk melindungi input agar tidak disusupi karakter hacker
+
+Lanjutan versi 2: lihat hapus.php
+1. menambahkan halaman hapus.php
+2. membuat function hapus()
+3. menjalankan query hapus data
+4. menuliskan alert "data berhasil dihapus"
+5. menambahkan atribut 'onclick' pada index.php untuk "return confirm('Yakin?')"
+
+
+
+Pertemuan 11: Metode variabel superglobal $_GET
+
+-awal-lihat halaman ubah.php
+1. kirim data id dengan metode GET melalui tag <a>ubah</a> dihalaman index.php
+2. buat halaman ubah.php
+3. tambahkan atribut value pada form html dihalaman ubah data
+4. tambahkan input hidden pada form html dihalaman ubah data
+5. buat function ubah()
+6. buat query update untuk mengubah data mahasiswa
+
+
+
+Pertemuan 12: Pencarian
+
+-awal- lihat halaman index.php
+1. ubah argument function query() menjadi DESC untuk tampilkan mahasiswa yang terbaru
+2. tambahkan form, input dan button untuk pencarian
+3. tambahkan atribut di tag input
+4. buat function cari() dihalam functions.php
+5. panggil function cari() dihalaman index.php
+
+
+Pertemuan 13: File Handling
+
+-awal- Tambah Data
+1. ubah atribut di tag input type="file" dihalaman tambah.php
+2. tambah atribut di tag form enctype="multipart/form-data" dihalaman tambah.php
+3. membuat function uplod() dibawah function tambah() dihalaman functions.php
+4. gunakan fungsi uniqid() didalam function upload() untuk mengubah nama gambar baru
+5. gunakan fungsi move_uploaded_file didalam function upload() untuk memindahkan tempat penyimpanan gambar
+6. kembalikan nama file / nama gambar baru agar bisa dimasukan ke key ['gambar']
+
+
+-lanjutan- Ubah Data
+1. ubah atribut di tag input type="file" dihalaman ubah.php
+2. tambah atribut di tag form enctype="multipart/form-data" dihalaman ubah.php
+3. tambahkan input type hidden untuk gambar lama dihalaman ubah.php
+4. modifikasi function ubah()
+
+
+
+Pertemuan 14: Registrasi
+
+1. bikin halaman registrasi.php
+2. bikin form registrasi
+3. bikin function registrasi() dihalaman functions.php
+4. panggil function registrasi() dihalaman registrai.php
+
+
+
+Pertemuan 15: login
+
+1. Membuat halaman login.php
+2. Mencocokan username dengan yang ada di database
+3. Setelah login maka redirect ke halaman index.php
+
+
+
+Pertemuan-16: session
+
+1. Membuat $_SESSION["login"] = true; dihalaman login.php setelah cek password
+2. Memanganggil function session_star() disetiap halaman
+3. Membuat halaman logout.php
+4. Memanggil function session dihalaman logout.php
+
+
+
+Pertemuan-17: cookie
+
+1. Membuat fiture Remember me:
+2. Menset cookie dihalaman login
+3. Melakukan pengecekkan cookie dihalaman login.php
+4. Menghapus cookie dihalaman logout.php
+
+
+
+Pertemuan-18: pagination / menetukan jumlah tampilan data per halaman
+
+1. Membuat logika penghitungan data untuk ditampilkan perhalaman
+2. Membuat navigasi untuk pagination
+3. Menambahka icon laquo dan raquo untuk navigasi
+
+
+Pertemuan-19: Live search menggunakan AJAX
+
+1. Membuat template ajax
+2. Mengambil data dan mengirimnya kembali ke mahasiswa.php
+3. Menapilkan data di halaman index.php
+
+Pertemuan-20: Live search menggunakan J_Query
+
+Pertemuan-21: Membuat Laporan PDF
+
+
+
+
+

@@ -1,0 +1,19 @@
+Pertemuan-10: Tambah / hapus Data
+-awal-lihat halaman tambah2.php untuk function dalam halaman yang sama
+1. membuat tag <a>Tambah data mahasiswa</a>
+2. membuat halaman tambah.php
+3. membuat query tambah data ke tabel mahasiswa
+
+versi 2: lihat tambah.php untuk function di halaman yang berbeda (functions.php)
+1. membuat function tambah(); di halaman function.php
+2. menjalankan fungsi tambah(); dihalaman tambah.php
+3. membuat alert "data berhasil ditambahkan"
+4. menambahkan atribut 'required' dihalaman tambah.php agar input wajib di isi
+5. menambahkan function 'htmlspecialchars' dihalaman functions.php untuk melindungi input agar tidak disusupi karakter hacker
+
+Lanjutan versi 2: lihat hapus.php
+1. menambahkan halaman hapus.php
+2. membuat function hapus()
+3. menjalankan query hapus data
+4. menuliskan alert "data berhasil dihapus"
+5. menambahkan atribut 'onclick' pada index.php untuk "return confirm('Yakin?')"

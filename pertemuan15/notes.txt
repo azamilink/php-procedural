@@ -1,0 +1,11 @@
+Pertemuan-14: Registrasi
+
+1. bikin halaman registrasi.php
+2. bikin form registrasi
+3. bikin function registrasi() dihalaman functions.php
+4. panggil function registrasi() dihalaman registrai.php
+
+Pertemuan 15: Login
+1. Membuat halaman login.php
+2. Mencocokan username dengan yang ada di database
+3. Setelah login maka redirect ke halaman index.php

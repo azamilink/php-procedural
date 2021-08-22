@@ -1,0 +1,21 @@
+Pertemuan-9: => Koneksi ke database
+
+-awal- lihat page index2.php untuk function dihalaman yang sama
+1. koneksi ke database "phpdasar" di MySQL
+2. ambil data dari tabel "mahasiswa" / query data mahasiswa
+3. ambil data (fetch) "mahasiswa" dari object result
+// mysqli_fetch_row() // mengembalikan array numerik [array dengan 'index' angka dari '0']
+// mysqli_fetch_assoc() // mengembalikan array associative [array dengan 'key' berupa 'nama']
+// mysqli_fetch_array() // mengembalikan keduanya [array numerik dan associative]
+// mysqli_fetch_object() // mengembalikan object
+4. lakukan pengulangan untuk setiap element pada array mahasiswa
+5. pengulangan untuk no urut tabel
+
+versi 2: lihat page index.php untuk function dihalaman yang berbeda (functions.php)
+1. membuat page function.php
+2. memindahkan koneksi / $conn ke page functions.php
+3. menghubunkan page functions.php ke index.php dengan 'require'
+4. membuat function query() dihalaman functions.php
+5. memanggil function query() dihalaman index.php
+6. lakukan pengulangan / foreach untuk setiap element pada array mahasiswa dan masukan ke $row
+7. tampilkan data yang ada dalam $row berdasarkan 'key' array mahasiswa

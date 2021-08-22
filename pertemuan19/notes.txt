@@ -1,0 +1,32 @@
+Pertemuan 14: Registrasi
+1. bikin halaman registrasi.php
+2. bikin form registrasi
+3. bikin function registrasi() dihalaman functions.php
+4. panggil function registrasi() dihalaman registrai.php
+
+Pertemuan 15: Login
+1. Membuat halaman login.php
+2. Mencocokan username dengan yang ada di database
+3. Setelah login maka redirect ke halaman index.php
+
+Pertemuan 16: Session
+1. Membuat $_SESSION["login"] = true; dihalaman login.php setelah cek password
+2. Memanganggil function session_star() disetiap halaman
+3. Membuat halaman logout.php
+4. Memanggil function session dihalaman logout.php
+
+Pertemuan 17: Cookie
+1. Membuat fiture Remember me:
+2. Menset cookie dihalaman login
+3. Melakukan pengecekkan cookie dihalaman login.php
+4. Menghapus cookie dihalaman logout.php
+
+Pertemuan-18: pagination
+1. Membuat logika penghitungan data untuk ditampilkan perhalaman
+2. Membuat navigasi untuk pagination
+3. Menambahka icon laquo dan raquo untuk navigasi
+
+Pertemuan 19: Live Search with AJAX
+1. Membuat template ajax
+2. Mengambil data dan mengirimnya kembali ke mahasiswa.php
+3. Menapilkan data di halaman index.php

@@ -1,0 +1,9 @@
+Pertemuan-11: Metode variabel superglobal $_GET
+
+-awal-lihat halaman ubah.php
+1. kirim data id dengan metode GET melalui tag <a>ubah</a> dihalaman index.php
+2. buat halaman ubah.php
+3. tambahkan atribut value pada form html dihalaman ubah data
+4. tambahkan input hidden pada form html dihalaman ubah data
+5. buat function ubah()
+6. buat query update untuk mengubah data mahasiswa

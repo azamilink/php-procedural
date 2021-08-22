@@ -1,0 +1,6 @@
+Pertemuan-14: Registrasi
+
+1. bikin halaman registrasi.php
+2. bikin form registrasi
+3. bikin function registrasi() dihalaman functions.php
+4. panggil function registrasi() dihalaman registrai.php

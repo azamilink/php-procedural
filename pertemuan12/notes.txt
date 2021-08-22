@@ -1,0 +1,9 @@
+Pertemuan-12: Pencarian
+
+-awal- lihat halaman index.php
+1. ubah argument function query() menjadi DESC untuk tampilkan mahasiswa yang terbaru
+2. tambahkan form, input dan button untuk pencarian
+3. tambahkan atribut di tag input
+4. buat function cari() dihalam functions.php
+5. panggil function cari() dihalaman index.php
+
